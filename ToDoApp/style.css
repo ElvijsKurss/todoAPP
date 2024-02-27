@@ -20,6 +20,7 @@ footer .footer-container .footer-content {
   --dark: #001747;
   --grey: #b1bacb;
   --grey-border: rgba(210, 210, 210, 0.75);
+  --light-grey-border: #878686bf;
   --grey-light: #eeeeee;
   --blue: #2d70fd;
   --green: #00d8a7;
@@ -183,9 +184,11 @@ input[type=checkbox] {
   position: absolute;
   right: 10px;
   top: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
 }
 .btn:active {
-  box-shadow: 2px 2px 5px rgba(133, 130, 130, 0.7490196078);
+  box-shadow: 5px 5px 7px var(--light-grey-border);
 }
 
 h2 {
@@ -232,4 +235,13 @@ h2 {
   font-size: 16px;
   padding: 0.7rem 1.5rem !important;
   border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.bottom-field-button-content button:active {
+  box-shadow: 5px 5px 7px var(--light-grey-border);
+}
+
+#todoCount {
+  padding: 0 3px;
 }/*# sourceMappingURL=style.css.map */

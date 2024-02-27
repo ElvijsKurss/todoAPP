@@ -1,63 +1,63 @@
 input[type="checkbox"]::before {
-    content: "\2713";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    font-size: 15px;
-    text-align: center;
-    border: 0.06rem solid var(--grey-border);
-    border-radius: 50%;
-    color: transparent;
-    align-items: center;
-    padding: 2px;
+  content: "\2713";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
+  border: 0.06rem solid var(--grey-border);
+  border-radius: 50%;
+  color: transparent;
+  align-items: center;
+  padding: 2px;
+}
+
+input[type="checkbox"]:checked::before {
+  color: var(--white);
+  background-color: var(--green);
+  border: 0.06rem solid var(--green);
+  border-radius: 50%;
+}
+.input {
+  position: relative;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  border: 0.06rem solid #d2d2d2bf;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+}
+
+input[type="text"]::placeholder {
+  color: var(--grey);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.btn {
+  color: var(--white);
+  font-size: 16px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  background-color: var(--blue);
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  &:active {
+    box-shadow: 5px 5px 7px var(--light-grey-border);
   }
-  
-  input[type="checkbox"]:checked::before {
-    color: var(--white);
-    background-color: var(--green);
-    border: 0.06rem solid var(--green);
-    border-radius: 50%;
-  }
-  .input {
-    position: relative;
-    display: flex;
-    padding-bottom: 10px;
-  }
-  
-  .input-field {
-    width: 100%;
-    border: 0.06rem solid #d2d2d2bf;
-    border-radius: 0.5rem;
-    padding: 1.25rem;
-    font-size: 1rem;
-  }
-  
-  input[type="text"]::placeholder {
-    color: var(--grey);
-  }
-  
-  
-  input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
-  }
-  
-  .btn {
-    color: var(--white);
-    font-size: 16px;
-    padding: 0.7rem 1.5rem;
-    border-radius: 8px;
-    background-color: var(--blue);
-    border: none;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    
-    &:active {
-        box-shadow: 2px 2px 5px #858282bf;
-    }
 }
 
 h2 {
