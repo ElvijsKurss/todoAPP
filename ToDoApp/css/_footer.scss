@@ -1,0 +1,10 @@
+footer{
+    display: flex;
+    .footer-container{
+        display: flex;
+        .footer-content{
+            display: flex;
+            color: var(--grey-light);
+        }
+    }
+}

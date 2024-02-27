@@ -1,0 +1,34 @@
+.bottom-field-content {
+  display: flex;
+  margin: auto;
+}
+.counter {
+  border: 0.06rem solid var(--grey-light);
+}
+
+.counter-container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  color: var(--grey);
+  padding: 10px 0 0 0;
+  p {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.bottom-field-button-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  button {
+    border: none;
+    background-color: transparent;
+    color: var(--grey);
+    font-size: 1rem;
+  }
+}

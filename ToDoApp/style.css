@@ -1,0 +1,233 @@
+@charset "UTF-8";
+footer {
+  display: flex;
+}
+footer .footer-container {
+  display: flex;
+}
+footer .footer-container .footer-content {
+  display: flex;
+  color: var(--grey-light);
+}
+
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --dark: #001747;
+  --grey: #b1bacb;
+  --grey-border: rgba(210, 210, 210, 0.75);
+  --grey-light: #eeeeee;
+  --blue: #2d70fd;
+  --green: #00d8a7;
+  --white: #ffffff;
+}
+
+body {
+  background-color: #001747;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Anta", sans-serif;
+}
+
+/* Main APP body CSS*/
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--white);
+  padding: 15px;
+  height: 85%;
+  width: 80%;
+  box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  overflow-y: scroll;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+  display: none;
+}
+
+.scroll {
+  height: 90%;
+  scrollbar-width: thin;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 8px;
+  padding: 10px 0;
+  width: auto;
+  overflow-wrap: break-word;
+}
+
+#todoList p {
+  display: flex;
+  gap: 1rem;
+  color: var(--dark);
+  align-items: center;
+}
+
+#todoList .disabled {
+  color: #8f98a8;
+}
+
+.disabled {
+  display: flex;
+  text-decoration: line-through;
+}
+
+.todo-container {
+  display: flex;
+  gap: 8px;
+}
+
+#deleteButton,
+#deleteButtonSelected {
+  padding: 0 5px;
+}
+
+input[type=checkbox]::before {
+  content: "✓";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
+  border: 0.06rem solid var(--grey-border);
+  border-radius: 50%;
+  color: transparent;
+  align-items: center;
+  padding: 2px;
+}
+
+input[type=checkbox]:checked::before {
+  color: var(--white);
+  background-color: var(--green);
+  border: 0.06rem solid var(--green);
+  border-radius: 50%;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  border: 0.06rem solid rgba(210, 210, 210, 0.7490196078);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+}
+
+input[type=text]::-moz-placeholder {
+  color: var(--grey);
+}
+
+input[type=text]::placeholder {
+  color: var(--grey);
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.btn {
+  color: var(--white);
+  font-size: 16px;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  background-color: var(--blue);
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.btn:active {
+  box-shadow: 2px 2px 5px rgba(133, 130, 130, 0.7490196078);
+}
+
+h2 {
+  text-transform: uppercase;
+  height: 30px;
+  color: var(--dark);
+  text-align: left;
+  padding: 10px 0;
+}
+
+.bottom-field-content {
+  display: flex;
+  margin: auto;
+}
+
+.counter {
+  border: 0.06rem solid var(--grey-light);
+}
+
+.counter-container {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  color: var(--grey);
+  padding: 10px 0 0 0;
+}
+.counter-container p {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-field-button-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bottom-field-button-content button {
+  border: none;
+  background-color: transparent;
+  color: var(--grey);
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
