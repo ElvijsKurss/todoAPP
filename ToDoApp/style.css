@@ -212,7 +212,7 @@ h2 {
   justify-content: center;
   justify-content: space-between;
   color: var(--grey);
-  padding: 10px 0 0 0;
+  padding: 10px 0;
 }
 .counter-container p {
   align-self: center;
@@ -226,8 +226,10 @@ h2 {
   justify-content: space-around;
 }
 .bottom-field-button-content button {
-  border: none;
+  border: 0.06rem solid var(--grey-light);
   background-color: transparent;
   color: var(--grey);
-  font-size: 1rem;
+  font-size: 16px;
+  padding: 0.7rem 1.5rem !important;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

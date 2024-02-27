@@ -13,7 +13,7 @@
   justify-content: center;
   justify-content: space-between;
   color: var(--grey);
-  padding: 10px 0 0 0;
+  padding: 10px 0;
   p {
     align-self: center;
     display: flex;
@@ -26,9 +26,11 @@
   flex-direction: row;
   justify-content: space-around;
   button {
-    border: none;
+    border: 0.06rem solid var(--grey-light);
     background-color: transparent;
     color: var(--grey);
-    font-size: 1rem;
+    font-size: 16px;
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 8px;
   }
 }

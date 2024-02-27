@@ -83,7 +83,7 @@ function deleteAllTasks() {
 }
 
 function deleteSelectedTasks() {
-  todo = todo.filter(task => !task.disabled);
+  todo = todo.filter((task) => !task.disabled);
   saveToLocalStorage();
   displayTasks();
 }
@@ -91,4 +91,3 @@ function deleteSelectedTasks() {
 function saveToLocalStorage() {
   localStorage.setItem("todo", JSON.stringify(todo));
 }
-
